@@ -1,18 +1,39 @@
-# Node / React build tooling
+# ── Node / Vite (the React UI in web/) ───────────────────────────
+node_modules/
 web/node_modules/
+dist/
 web/dist/
+.vite/
 web/.vite/
+*.tsbuildinfo
 
-# CommandBox / Lucee server runtime
+# Built front-end assets are NOT committed — the Vite dev server serves
+# the source directly (live HMR), and the sandbox builds nothing static.
+public/index.html
+public/assets/
+
+# ── CommandBox / Lucee server runtime ────────────────────────────
 .CommandBox/
 .engine/
 WEB-INF/
 **/lucee-server/
 **/lucee-web/
+
+# ── Env / secrets ────────────────────────────────────────────────
 .env
+.env.local
+.env.*.local
 
-# OS
+# ── Gently sandbox scratch ───────────────────────────────────────
+.gently/
+
+# ── Logs ─────────────────────────────────────────────────────────
+*.log
+npm-debug.log*
+
+# ── OS / editor ──────────────────────────────────────────────────
 .DS_Store
-
-# NOTE: public/index.html and public/assets/ (the built React app) ARE committed,
-# so the app runs in the sandbox without a Node build step.
+Thumbs.db
+.idea/
+.vscode/
+*.swp
