@@ -1,0 +1,13 @@
+{
+	"name": "gently-blog",
+	"web": {
+		"host": "0.0.0.0",
+		"webroot": "public",
+		"http": { "port": 8080, "enable": true },
+		"welcomeFiles": "index.html,index.cfm",
+		"rewrites": { "enable": false }
+	},
+	"app": { "cfengine": "lucee@6" },
+	"openbrowser": false,
+	"jvm": { "heapSize": "512" }
+}

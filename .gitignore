@@ -1,0 +1,18 @@
+# Node / React build tooling
+web/node_modules/
+web/dist/
+web/.vite/
+
+# CommandBox / Lucee server runtime
+.CommandBox/
+.engine/
+WEB-INF/
+**/lucee-server/
+**/lucee-web/
+.env
+
+# OS
+.DS_Store
+
+# NOTE: public/index.html and public/assets/ (the built React app) ARE committed,
+# so the app runs in the sandbox without a Node build step.

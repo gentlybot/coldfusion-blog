@@ -1,0 +1,9 @@
+{
+	"name": "gently-blog",
+	"version": "1.0.0",
+	"slug": "gently-blog",
+	"description": "A ColdFusion (Lucee) + MySQL + React blog with comments and an admin area.",
+	"private": true,
+	"dependencies": {},
+	"installPaths": {}
+}
